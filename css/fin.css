@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url(../img/back.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#overall{
+    margin: 0 auto;
+    width: 1500px;
+    background: rgba(0, 0, 0,0.6);
+}
+#main-navigation{
+    background: black;
+    padding: 0px;
+}
+#main-navigation ul{
+    list-style: none;
+    text-align: right;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+#main-navigation a{
+    height: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#main-navigation ul li{
+    margin-right: 0; /* Remove the right margin from the last button */
+  }
+  #main-navigation ul li a {
+    display: inline-block; /* Make the links behave as inline elements */
+    padding: 5px 10px; /* Add some padding to the buttons */
+    background-color: #000000;
+    text-decoration: none;
+    line-height: 2.2;
+    transition: transform 0.2s;
+  }
+
+#main-navigation a:hover{
+    background-color:#27187E;
+    box-shadow: 2px 13px 23px 0px rgba(92,200,255,1); 
+    transform: scale(1.1);
+}
+#main-navigation ul li a.current {
+    background-color: #FFC759;
+    transform: scale(1.2);
+    border-radius: 4px;
+     }
+
+#banner img{
+    width: 100%;
+}
+#shop{
+    margin: 30px 0;
+    text-align: center;
+}
+#shop img.product-image{
+    width: 350px;
+}
+#shop h2.product-name{
+    font-size: 20px;
+    margin-bottom: 0px;
+    color: aliceblue;
+}
+
+#shop span.price{
+    font-size: 58px;
+    display: block;
+    font-weight: bolder;
+    color: aliceblue;
+} 
+#shop a.add-to-bag{
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    color: aliceblue;
+    font-size: 15px;
+    border: 2px solid aliceblue;
+    width: 230px;
+    margin: 20px auto;
+    padding: 10px 0;
+    background-clip: padding-box ;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0,0.6);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.popup{
+    margin: 100px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); 
+    border-radius: 5px;
+    width: 65%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+.popup h2{
+    margin-top: 0;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+}
+
+.popup .close{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+}
+
+.popup .close:hover{
+    color: aquamarine;
+    }
+
+.popup .content{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+    max-height: 30%;
+    overflow: auto;
+}   
+
+#shop rating.img{
+    width: 0px ;    
+}
+#footer img{
+    width: 100%;
+}
+
