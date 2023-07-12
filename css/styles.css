@@ -14,6 +14,10 @@ body{
 #main-navigation{
     background: black;
     padding: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 #main-navigation ul{
     list-style: none;
@@ -23,13 +27,6 @@ body{
     justify-content: flex-end;
     padding: 0;
 }
-#main-navigation nav{
-    position: fixed;
-    top: 0;
-    left:0 ;
-    width: 100%;
-}
-    
 
 #main-navigation a{
     height: 50px;
