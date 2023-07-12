@@ -22,6 +22,8 @@ body{
     display: flex;
     justify-content: flex-end;
     padding: 0;
+    postion: fixed;
+    top: 0px;
 }
 
 #main-navigation a{
