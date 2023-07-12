@@ -22,9 +22,14 @@ body{
     display: flex;
     justify-content: flex-end;
     padding: 0;
-    postion: fixed;
-    top: 0px;
 }
+nav{
+    position: fixed;
+    top: 0;
+    left:0 ;
+    width: 100%;
+}
+    
 
 #main-navigation a{
     height: 50px;
